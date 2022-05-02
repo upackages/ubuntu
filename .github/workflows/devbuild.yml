@@ -48,4 +48,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/upackages/unately:${{ matrix.tag }}
+            ghcr.io/upackages/ubuntu:${{ matrix.tag }}
