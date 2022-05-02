@@ -11,7 +11,7 @@ sed -r "$sedStr" $1
 }
 
 maintainer=(hello@unately.com)
-versions=(bionic focal impish jammy kinetic trusty xenial latest)
+versions=(bionic focal jammy latest)
 repository=(https://github.com/upackages/ubuntu)
 
 for version in ${versions[*]}; do
