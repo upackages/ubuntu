@@ -16,7 +16,7 @@ on:
       - 'LICENSE'
 jobs:
   push:
-    name: "installers:{{ matrix.tag }}"
+    name: "ubuntu:{{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
