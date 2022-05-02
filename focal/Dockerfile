@@ -11,8 +11,7 @@ LABEL org.opencontainers.image.description The Ubuntu focal Version by unately
 
 RUN  dpkg --add-architecture i386 \
 	 && apt-get update \
-	 && apt-get dist-upgrade -y
-     
-RUN apt-get -y --no-install-recommends install grep ca-certificates curl zip unzip lib32gcc-s1 libsdl2-2.0-0:i386 git wget bash dos2unix sudo \
+	 && apt-get dist-upgrade -y \
+     && apt-get -y --no-install-recommends install grep ca-certificates curl zip unzip lib32gcc-s1 libsdl2-2.0-0:i386 git wget bash dos2unix sudo \
      && apt-get clean \
      && rm -rf /var/lib/apt/lists/*
