@@ -23,13 +23,9 @@ jobs:
       matrix:
         tag:
           - latest
-          - bionic 
-          - focal 
-          - impish 
-          - jammy 
-          - kinetic 
-          - trusty 
-          - xenial
+          - bionic
+          - focal
+          - jammy
     steps:
       - uses: actions/checkout@v2
 
