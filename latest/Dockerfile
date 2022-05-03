@@ -11,6 +11,6 @@ LABEL org.opencontainers.image.description The Ubuntu latest Version by unately
 
 RUN  apt-get update \
 	 && apt-get dist-upgrade -y \
-     && apt-get -y --no-install-recommends install grep ca-certificates curl zip unzip git wget bash dos2unix sudo \
+     && apt-get -y --no-install-recommends install grep libssl1.1 ca-certificates curl zip unzip git wget bash dos2unix sudo \
      && apt-get clean \
      && rm -rf /var/lib/apt/lists/*
